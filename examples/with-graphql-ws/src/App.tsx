@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react'
-import { createClient } from 'graphql-ws'
+import { client } from './client'
 import './App.css'
-
-const client = createClient({
-  url: 'ws://localhost:5173/graphql',
-})
 
 export function App() {
   const [greetings, setGreetings] = useState([])
