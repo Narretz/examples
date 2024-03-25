@@ -7,6 +7,8 @@ export function App() {
 
   useEffect(() => {
     async function subscribe() {
+      console.log('subscribe')
+
       const subscription = client.iterate({
         query: `subscription { greetings }`,
       })
